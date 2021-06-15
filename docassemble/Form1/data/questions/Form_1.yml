@@ -1,0 +1,70 @@
+#developed by Bryce Gassner for Alconn
+---
+question: |
+  Please enter the following details of the Purchaser
+fields:
+  - First Name: client_name_first
+  - Last Name: client_name_last
+  - Email: client_email
+    datatype: email
+  - Street: client_street
+  - Suburb: client_suburb
+  - State: client_state
+    choices:
+      - SA
+      - WA
+      - VIC
+      - TAS
+      - NT
+      - QLD
+      - NSW
+      - ACT
+  - Postcode: client_postcode
+    datatype: integer 
+---
+question: |
+  Please enter the details of the allotment
+fields:
+  - Allotment Number: client_lot_number
+    datatype: integer
+  - Allotment Street: client_lot_street
+  - Purchase Price: client_purchase_price
+    datatype: currency
+  - Deposit Amount: client_deposit_price
+    datatype: currency
+---
+question: |
+  Please enter further details
+fields:
+  - Finance Lender: client_finance_lender
+  - Loan size: client_loan_size
+    datatype: currency
+  - Settlement date: client_settlement_date
+    datatype: date
+  - Finance due date: client_finance_due_date
+    datatype: date
+---
+mandatory: True
+question: |
+  Here is your document for ${ client_name_first}, the purchaser of Lot ${client_lot_number}.
+subquestion: |
+  Please review the following information to ensure it is correct:
+  
+  Purchaser Details|Information Provided
+  -------|-------
+  First Name|${client_name_first}
+  Last Name|${client_name_last}
+  Email|${client_email}
+  Street|${client_street}
+  Suburb|${client_suburb}
+  State|${client_state}
+  Postcode|${client_postcode}
+  Allotment Number|${client_lot_number}
+  Allotment Street|${client_lot_street}
+  Purchase Price|${client_purchase_price}
+  Deposit Amount|${client_deposit_price}
+  Finance Lender|${client_finance_lender}
+  Loan size|${client_loan_size}
+  Settlement date|${client_settlement_date}
+  Finance due date|${client_finance_due_date}
+---

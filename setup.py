@@ -44,8 +44,8 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 
 setup(name='docassemble.Form1',
       version='0.0.1',
-      description=('Docassemble first creation'),
-      long_description='# docassemble.Form1\n\nDocassemble first creation\n\n## Author\n\nBryce Gassner, bgassner99@gmail.com\n\n',
+      description=('Docassemble creation of Form 1 by Alconn'),
+      long_description='# docassemble.Form1\r\n\r\nDocassemble first creation\r\n\r\n## Author\r\n\r\nBryce Gassner, bgassner99@gmail.com\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Bryce Gassner',
       author_email='bgassner99@gmail.com',
